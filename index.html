@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de herois</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/post.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de startup</h1>
+        <p>Preencha os dados abaixo!!!</p>
+    </header>
+    <main>
+        <section>
+            <p><a href="pages/get.html">Consultar startups</a></p>
+            <h2>Novo startup</h2>
+
+            <form id="form-startup">
+                <label for="title">Nome do startup: </label>
+                <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+                <label for="area_atuacao">Área de atuação: </label>
+                <input id="area_atuacao" name="area_atuacao" type="text" required />
+
+                <label for="ano_fundacao">Ano de fundação: </label>
+                <input id="ano_fundacao" name="ano_fundacao" type="number" required />
+
+                <label for="país">País: </label>
+                <input id="país" name="país" type="text" required />
+
+                <label for="site">Site: </label>
+                <input id="site" name="site" type="text" required />
+
+                <label for="imageUrl">URL da imagem (opcional): </label>
+                <input id="imageUrl" name="imageUrl" type="url" />
+
+                <button type="submit">Cadastrar startup</button>
+            </form>
+
+            <p id="resposta"></p>
+        </section>
+    </main>
+</body>
+
+</html>

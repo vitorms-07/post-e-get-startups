@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de startups</title>
+    <link rel="stylesheet" href="../css/get.css" />
+    <script src="../js/get.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lista de startups</h1>
+        <p>Veja abaixo a lista de startups</p>
+    </header>
+    <main>
+        <p><a href="../index.html">Voltar para o cadastro</a></p>
+        <section id="container-titulo-lista">
+            <h2 id="titulo-lista">Startups cadastrados</h2>
+            <p>Os startups são exibidos automaticamente ao abrir a página</p>
+            <p id="resposta"></p>
+            <ul id="lista-startups"></ul>
+        </section>
+    </main>
+
+    <template id="modelo-startups">
+        <li>
+            <div class="card-capa">
+                <img src="" alt="" />
+            </div>
+            <div class="card-conteudo">
+                <h3 class="nome"></h3>
+                <p><strong>Área de atuação:</strong> <span class="area_atuacao"></span></p>
+                <p><strong>Ano de fundação:</strong> <span class="ano_fundacao"></span></p>
+                <p><strong>País:</strong> <span class="pais"></span></p>
+                <p><strong>Site:</strong> <a class="site" target="_blank"></a></p>
+            </div>
+        </li>
+    </template>
+</body>
+
+</html>
